@@ -1,8 +1,26 @@
 # animation
 
-A new Flutter project.
+Flutter animation tutorials.
 
-## Getting Started
+## chapter 2
+
+### 2-4
+
+    An AnimationController with multi-widgets for building complex animations.
+
+### 2-5
+
+    AnimatedBuilder()
+
+    Tween().chain()[.chain()].evalute(AnimationController)
+
+### 2-6
+
+    BoxDecoration(gradient) -> RadialGradient() -> Multi-Animation
+
+    FadeTransition()
+
+
 
 This project is a starting point for a Flutter application.
 
