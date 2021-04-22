@@ -25,17 +25,25 @@ class _demoState extends State<demo> with SingleTickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    return FadeTransition(
-      opacity: _controller,
-      child: Container(
-        height: 300,
-        width: 300,
-        color: Colors.blueAccent,
-        child: Center(
-          child: Text(
-            "Hi",
-            style: TextStyle(fontSize: 100),
+    return AnimatedBuilder(
+      animation: _controller,
+      builder: (context, child) {
+        return Opacity(
+          opacity: _controller.value,
+          child: Container(
+            height: Tween(begin: 100.0, end: 300.0)
+                .chain(CurveTween(curve: Curves.bounceInOut))
+                .evaluate(_controller),
+            width: 300,
+            color: Colors.blueAccent,
+            child: child,
           ),
+        );
+      },
+      child: Center(
+        child: Text(
+          "Hi",
+          style: TextStyle(fontSize: 100),
         ),
       ),
     );
