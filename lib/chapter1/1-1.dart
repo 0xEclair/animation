@@ -14,7 +14,7 @@ Center get demo => () {
               begin: Alignment.bottomCenter,
               end: Alignment.topCenter,
               colors: [Colors.red,Colors.white],
-              stops: [0.2,1]
+              stops: [0.2,0.2]
           ),
           // shadow spreads the value of spreadRadius.
           boxShadow: [BoxShadow(spreadRadius: 15, blurRadius: 30)],
