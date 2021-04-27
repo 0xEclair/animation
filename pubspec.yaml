@@ -28,6 +28,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flare_flutter: ^2.0.3
+  http: ^0.12.2
 
 
 # For information on the generic Dart part of this file, see the
