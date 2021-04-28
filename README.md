@@ -20,6 +20,13 @@ Flutter animation tutorials.
 
     FadeTransition()
 
+## extra
+
+### layout
+
+    Positioned是提供给Stack的。
+    
+    Stack的size根据内部非Positioned组件决定。默认是最大的非Positioned组件。
 
 
 This project is a starting point for a Flutter application.
