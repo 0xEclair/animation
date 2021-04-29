@@ -24,9 +24,21 @@ Flutter animation tutorials.
 
 ### layout
 
+#### Stack
+
     Positioned是提供给Stack的。
     
     Stack的size根据内部非Positioned组件决定。默认是最大的非Positioned组件。
+
+#### SingleChildRenderObjectWidget
+
+    offset & size 
+    is equal to 
+    Rect.fromLTWH(offset.x,
+                  offset.y,
+                  size.width,
+                  size.height)
+
 
 
 This project is a starting point for a Flutter application.
