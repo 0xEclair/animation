@@ -1,7 +1,6 @@
+import 'package:animation/extra-layout/RenderBoxDemo.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-
-import 'package:animation/chapter3/3-4.dart';
 
 void main() => runApp(MyApp());
 
@@ -61,13 +60,9 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Center(
-        child: demo()
-      ),
+      body: RenderBoxDemo(),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-
-        },
+        onPressed: () {},
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
